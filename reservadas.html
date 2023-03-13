@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&family=Rubik+Iso&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/base.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <title>Palavras reservadas</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo-c">c++</h1>
+        <nav class="navegacao">
+            <ul class="lista">
+                <li class="item"><a class="itens" href="index.html">início a linguagem</a></li>
+                <li class="item"><a class="itens-ativo" href="reservadas.html">Palavras Reservadas</a></li>
+                <li class="item"><a class="itens" href="circuitosCodigos.html">circuitos e códigos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h2>Palavras Reservadas a linguagem</h2>
+            <p>As palavras reservadas a linguagem não podem ser usadas em qualquer lugar , quando escrevemos no editor
+                de código (IDE Arduíno) esses palavras especiais tem a cor da fonte alterada, com o objetivo de mostrar
+                que estão escritas de forma correta e que são palavras reservadas ao código. Vou passar por todas que já
+                vimos até agora e adicionar as outras com forme fomos segundo o semestre, explicar como cada uma
+                funciona e como usá-las.</p>
+        </div>
+        <h2>void setup e void loop</h2>
+        <p>void setup, tem o objetivo de definir quais pinos utilizaremos com quais tipos de sensores ou motores
+            entre outras, o void setup só é executado uma vez no código, por esse motivo ele vem antes do void loop.
+        </p>
+        <p>A estrutura básica do void setup é a seguinte:</p>
+        <p><span>void setup</span>() {}</p>
+        <p>Os parênteses servem para passarmos parâmetros para a função setup, porém não utilizaremos. Já as chaves
+            é onde montamos a estrutura que vai pertencer ao void setup, de forma mais simplificada todas as
+            configurações precisam estar dentro das chaves. Obs. não podemos ter mais de um void setup.</p>
+        <p>Exemplo:</p>
+        <img class="imagem" src="./src/img/exemplos/voidSetup.png">
+        <p>void loop, como podemos ver pelo seu nome, tudo que estiver dentro dele executar infinitamente, tudo que
+            queremos que
+            o Arduíno execute repetidamente, por exemplo, piscar um led, a estrutura dele é igual à do void setup:</p>
+        <p><span>void loop</span>() {}</p>
+        <p>Os parênteses e chaves tem a mesma função.</p>
+        <p>Exemplo:</p>
+        <img class="imagem" src="./src/img/exemplos/voidLoop.png">
+        </div>
+        <div>
+            <h2>PinMode</h2>
+            <p>pinMode, como podemos ver são duas palavras separadas por letra maiúscula, pin vem de pino, e mode vem de
+                modo, a
+                estrutura dele é essa:</p>
+            <p><span>pinMode</span>(número do pino do arduíno, se ele será de entrada(<i>INPUT</i>) ou
+                saída(<i>OUTPUT</i>) );</p>
+            <p>Exemplo:</p>
+            <img class="imagem" src="./src/img/exemplos/pinMode.png">
+
+        </div>
+        <div>
+            <h2>DigitalWrite</h2>
+            <p>digitalWrite, também separado por letra maiúscula o digital vem do pino digital do arduino(do 0 ao 13),
+                write vem
+                de escreta, que significa que passaremos para o arduino se o pino estará ligado ou desligado, sua
+                estrutura é:
+            </p>
+            <p><span>digitalWrite</span>(pino que foi configurado como saída no void setup, se será ligado(<i>HIGH</i>)
+                ou
+                desligado(<i>LOW</i>) );</p>
+            <p>Exemplo:</p>
+            <img class="imagem" src="./src/img/exemplos/digitalWrite.png">
+        </div>
+        <div>
+            <h2>Delay</h2>
+            <p>delay, o seu nome já diz tudo ele tem a função de fazer uma pausa no meu código, como o código é lido e
+                executado
+                em questões de segundo pelo computador algumas vezes precisaremos usar o delay para que ele espere antes
+                de ler
+                a próxima linha de código, como usá-lo:
+            </p>
+            <p><span>delay</span>(tempo que ficará parado);</p>
+            <p>O tempo tem que ser escrito em milissegundos, ou seja, a cada 1000 milissegundos eu terei 1 segundo, 2000
+                milissegundos será equivalente a 2 segundo e assim por diante.</p>
+            <p>Exemplo:</p>
+            <img class="imagem" src="./src/img/exemplos/delay.png">
+        </div>
+        <div>
+            <h2>DigitalRead</h2>
+            <p>O digitalRead é usado para passar uma informação para o arduíno, o digital por sem um pino digital do
+                arduíno e o
+                read é a leitura que é feita pelo sensor conectado no pino, sua estrutura é:</p>
+            <p><span>digitalRead</span>(o pino que está ligado ou sensor);</p>
+            <p>Exemplo:</p>
+            <img class="imagem" src="./src/img/exemplos/digitalRead.png">
+        </div>
+        <div>
+            <h2>Variáveis</h2>
+            <p>Variáveis são formas de guardar informação no código, colocando essas informações na memória do arduíno.
+                Para criarmos essas memórias precisamos passar três parâmetros importantes, o primeiro é o tipo de
+                memória. Temos vários tipos de memórias as mais importantes no momento são int, float e String</p>
+            <p>Usamos o int para guardar números inteiros como 1, 2, 3, 50… e etc.
+                Já o float usamos para números fracionados como 1.6, 10.3.
+                A String é usada para escrever uma sequência de letras e caracteres como o de um testo.</p>
+            <p>Depois precisamos dar um nome a essa memória para podermos achá-la novamente. Podemos literalmente dar
+                qualquer nome, porém por motivos de melhor entendimento usamos nomes que fação algum sentido, por
+                exemplo se estiver guardando a informação de um pino do arduíno que esta responsável por ligar um led,
+                coloco o nome da variável de pinLed ou pinoLed. Sempre lembrando que não posso separá-las com espaço
+                dessa forma (pin led), estará errada.</p>
+            <p>A última informação é o dado que será guardado, vou mostras os formatos dessas memórias:</p>
+            <p><i>int</i> pinLed = 13;</p>
+            <p><i>float</i> dado = 5,3;</p>
+            <p><i>String</i> nome = “Geovanne”;</p>
+            <p>Agora que as variáveis já foram definidas só preciso chamá-las no código, em todos os lugares que eu
+                escrever (pinLed) o meu código ira substituir por 13 o (dado) por 5,3 e o (nome) pro Geovanne. Usaremos
+                as variáveis para otimizamos nossos códigos.</p>
+            <div class="imagens">
+                <img class="imagem" src="./src/img/exemplos/int.png">
+                <img class="imagem" src="./src/img/exemplos/float.png">
+                <img class="imagem" src="./src/img/exemplos/string.png">
+            </div>
+            <p>Exemplo de um código sem variáveis:</p>
+            <div class="imagens">
+                <img class="imagem" src="./src/img/exemplos/semVariaveis13.png">
+                <img class="imagem" src="./src/img/exemplos/semVariaveis12.png">
+            </div>
+            <p>Caso precisarmos alterar nosso pino, precisáramos fazer isso em todos os lugares que use valor for usado.
+            </p>
+            <p>Exemplo de um código com variáveis:</p>
+            <div class="imagens">
+                <img class="imagem" src="./src/img/exemplos/comVariaveis13.png">
+                <img class="imagem" src="./src/img/exemplos/comVariaveis12.png">
+            </div>
+            <p>Já no código com as variáveis, o único dado que vou precisar alterar é o que está dentro da variável e
+                todos o resto será alterado automaticamente.</p>
+        </div>
+        <h2>If e Else</h2>
+        <p>Quando precisamos testar alguma condição no nosso código usamos o if(se) para fazemos comparações. Posso
+            verificar se o valor é igual, diferente, maior ou igual, menos ou igual, usando esses sinais.</p>
+        <p>== para iguais</p>
+        <p>>= para maiores ou iguais</p>
+        <p>
+            <= para menores ou iguais</p>
+                <p>=! para diferentes</p>
+                <p>A estrutura de um if é a seguinte:</p>
+                <p>if(primeiro dado que quero comparar == segundo dado que quero comparar){caso a comparação seja valida
+                    o que quero que aconteça} um exemplo uma pouco mais claro:</p>
+                <img class="imagem" src="./src/img/exemplos/ifVerdadeiro.png">
+                <img class="imagem" src="./src/img/exemplos/ifFalso.png">
+                <p>A condição sendo verdadeira o meu código que estiver dentro das chaves do if será executada, porém se
+                    for falso o código não será executado.</p>
+                <p>Já o else(se não) eu uso para executar um código se minha condição for falsa, sua estrutura é montada
+                    a baixo do if:</p>
+                    <img class="imagem" src="./src/img/exemplos/elseFalso.png">
+                <img class="imagem" src="./src/img/exemplos/elseVerdadeiro.png">
+                <p>Em circuitos e códigos coloquei alguns circuitos que já montamos e seus respectivos códigos para
+                    ajudar uma pouco</p>
+                <p>Todo o conteúdo adicional seja adicionado nessa página na semana após as aulas, caso seja relevante,
+                    se tiver alguma dúvida em alguma parte me pergunte no whatsapp ou no laboratório.</p>
+    </main>
+</body>
+
+</html>

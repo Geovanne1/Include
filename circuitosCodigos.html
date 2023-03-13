@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&family=Rubik+Iso&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/base.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <title>Include</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo-c">c++</h1>
+        <nav class="navegacao">
+            <ul class="lista">
+                <li class="item"><a class="itens" href="index.html">início a linguagem</a></li>
+                <li class="item"><a class="itens" href="reservadas.html">Palavras Reservadas</a></li>
+                <li class="item"><a class="itens-ativo" href="circuitosCodigos.html">circuitos e códigos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h2>Pisca LED</h2>
+            <p>Circuito:</p>
+            <img src="./src/img/circuitos/circuitoLed.png" alt="circuito led" class="imagem-circuito">
+            <p>Código:</p>
+            <img src="./src/img/circuitos/piscaLed.png" alt="" class="imagem-circuito">
+            <p>por escrito:</p>
+            <p>int pinLed = 12;</p>
+            <p>void setup(){</p>
+            <p>pinMode(pinLed, OUTPUT);</p>
+            <p>}</p>
+            <p>void loop(){</p>
+            <p>digitalWrite(pinLed, HIGH);</p>
+            <p>delay(1000);</p>
+            <p>digitalWrite(pinLed, LOW);</p>
+            <p>delay(1000);</p>
+            <p>}</p>
+        </div>
+        <div>
+            <h2>Sensor</h2>
+            <p>Circuito:</p>
+            <img src="./src/img/circuitos/circuitoSensor.png" alt="circuito sensor" class="imagem-circuito">
+            <p>Código:</p>
+            <img src="./src/img/circuitos/sensorSimples.png" alt="" class="imagem-circuito">
+            <p>por escrito:</p>
+            <p>int pinLed = 13;</p>
+            <p>int sensor = 7;</p>
+            <p>int valor;</p>
+            <p>void setup(){</p>
+            <p>pinMode(pinLed, OUTPUT);</p>
+            <p>pinMode(sensor, INPUT);</p>
+            <p>}</p>
+            <p>void loop(){</p>
+            <p>valor = digitalRead(sensor);</p>
+            <p>if(valor == HIGH){</p>
+            <p>digitalWrite(pinLed, HIGH);</p>
+            <p>}else{</p>
+            <p>digitalWrite(pinLed, LOW);</p>
+            <p>}</p>
+            <p>}</p>
+        </div>
+    </main>
+</body>
+
+</html>

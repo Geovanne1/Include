@@ -1,0 +1,262 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: #4f4f4f;
+  color: #fff;
+  font-family: "inter", sans-serif;
+  display: flex;
+}
+
+header {
+  background: #1c1c1c;
+  width: 30vw;
+  height: 20vw;
+  z-index: 99;
+  padding-right: 2rem;
+  border-radius: 0.5rem;
+}
+
+.titulo-c {
+  font-family: "Rubik Iso", cursive;
+  font-size: 7rem;
+  padding: 20px;
+  color: #fff;
+}
+
+.navegacao {
+  display: flex;
+  flex-direction: column;
+}
+
+.lista {
+  flex-align: center;
+}
+
+.item {
+  margin: 1.3rem;
+}
+
+.itens {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "inter", sans-serif;
+  text-transform: uppercase;
+}
+
+.itens-ativo {
+  text-decoration: none;
+  color: #ffa500;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "inter", sans-serif;
+  text-transform: uppercase;
+}
+
+.itens:hover {
+  color: #ffa500;
+}
+
+main {
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin: 1.3rem;
+  font-family: "inter", sans-serif;
+  font-size: 18px;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 728px) {
+  body {
+    background: #4f4f4f;
+    color: #fff;
+    font-family: "inter", sans-serif;
+    display: block;
+}
+
+header {
+    display: block;
+    width: 91%;
+    height: 18rem;
+}
+
+.titulo-c {
+    font-family: "Rubik Iso", cursive;
+    font-size: 6rem;
+    padding: 20px;
+    color: #fff;
+}
+
+.navegacao {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .lista {
+    flex-align: center;
+  }
+
+  .item {
+    margin: 1.3rem;
+  }
+
+  .itens {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: "inter", sans-serif;
+    text-transform: uppercase;
+  }
+
+  main {
+    padding-top: 1rem;
+    padding-left: 0rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+
+  p {
+    margin: 1.3rem;
+    font-family: "inter", sans-serif;
+    font-size: 18px;
+    line-height: 1.5rem;
+  }
+}

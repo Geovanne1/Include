@@ -1,0 +1,38 @@
+h2 {
+    color: #FFA500;
+}
+
+p span {
+    font: bold;
+    color: #FFA500;
+}
+
+p i {
+    color: #00BFFF;
+}
+
+.imagens {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem {
+    margin-bottom: 1.3rem;
+    width: 40%;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.imagem-circuito{
+    width: 95%;
+}
+
+@media screen and (max-width: 728px) {
+    .imagem {
+        margin-left: 0.5rem;
+        margin-bottom: 1.3rem;
+        width: 90%;
+        padding-left: 15px;
+        border-radius: 10px;
+    }
+}
